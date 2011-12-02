@@ -1,0 +1,9 @@
+{
+	"name": "Campfire for Chrome",
+	"version": "0.0.1",
+	"description": "Campfire client for Google Chrome.",
+	"browser_action": {
+		"default_icon": "icon.png",
+		"popup": "test.html"
+	}
+}
