@@ -1,8 +1,11 @@
 <!DOCTYPE HTML>
-<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
-
-<body>
-  <h3>やってみよう</h3>
+<html>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+  <head>
+    <title>Campfire for Chrome</title>
+  </head>
+  <body>
+    <h3>やってみよう</h3>
     <div class="formRow">
       <label for="username">Username</label>
       <input id="username" name="username" type="text">
@@ -15,36 +18,36 @@
       <input id="login" name="login" type="button" value="Login"><br>
       <small><a href="https://launchpad.37signals.com/campfire/forgot_password">Forgot your username/password?</a></small>
     </div>
-</body>
+  </body>
+  <style>
+    body {
+      background-color: #eef0f3;
+      min-width: 300px;
+      overflow-x:hidden;
+    }
 
-<style>
-body {
-  background-color: #eef0f3;
-  min-width: 300px;
-  overflow-x:hidden;
-}
+    label {
+      position: relative;
+      float: left;
+      vertical-align: middle;
+      font-weight: bold;
+      width: 30%;
+    }
 
-label {
-  position: relative;
-  float: left;
-  vertical-align: middle;
-  font-weight: bold;
-  width: 30%;
-}
+    input[type=text] {
+      position: relative;
+      width: 68%;
+    }
 
-input[type=text] {
-  position: relative;
-  width: 68%;
-}
-
-.formRow {
-  padding: 2px;
-  position: relative;
-  left: 5%;
-  width: 90%;
-  border-top: none;
-  border-left: none;
-  border-right: none;
-  border-bottom: solid 1px #bec0c3;
-}
-</style>
+    .formRow {
+      padding: 2px;
+      position: relative;
+      left: 5%;
+      width: 90%;
+      border-top: none;
+      border-left: none;
+      border-right: none;
+      border-bottom: solid 1px #bec0c3;
+    }
+  </style>
+</html>
