@@ -1,0 +1,51 @@
+<!DOCTYPE HTML>
+<html>
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <title>Config - Campfire for Chrome</title>
+    <style type="text/css">
+      body {
+        background-color: #eef0f3;
+        min-width: 300px;
+        overflow-x:hidden;
+      }
+
+      label {
+        position: relative;
+        float: left;
+        vertical-align: middle;
+        font-weight: bold;
+        width: 350px;
+      }
+
+      input[type=text] {
+        position: relative;
+        width: 68%;
+      }
+
+      .formRow {
+        padding: 2px;
+        position: relative;
+        left: 5%;
+      }
+      
+      fieldset {
+        margin: auto;
+        width: 0px;
+        border: none;
+      }
+    </style>
+    <script type="text/javascript" src="scripts/plugins/jquery-1.7.1.min.js"></script>
+    <script type="text/javascript" src="scripts/config.js"></script>
+  </head>
+  <body>
+    <fieldset>
+      <legend><h1>Config</h1></legend>
+      <div class="formRow"><label for="account">Account (https://<u>*****</u>.campfirenow.com)</label><input id="account"></div>
+      <div class="formRow"><label for="username">Username</label><input id="username"></div>
+      <div class="formRow"><label for="password">Password</label><input id="password" type="password"></div>
+      <input id="auth" type="button" value="Authenticate" disabled>
+      <div id="message"></div>
+    </fieldset>
+  </body>
+</html>
