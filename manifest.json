@@ -6,5 +6,9 @@
 		"default_icon": "icon.png",
 		"popup": "test.html"
 	},
+	"permissions": [
+    "http://*.campfirenow.com/",
+	  "https://*.campfirenow.com/"
+	],
 	"options_page": "config.html"
 }

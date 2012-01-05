@@ -2,7 +2,7 @@ $(document).ready(function() {
   //Loading function
   $('.formRow input').each(
     function() {
-      this.value = localStorage[this.id];
+      this.value = localStorage[this.id] ? localStorage[this.id] : "";
       $(this).change(function() {
         $('#auth').removeAttr('disabled');
       });
@@ -18,17 +18,23 @@ $(document).ready(function() {
     $(this).attr('disabled', 'disabled');
     $.ajax(
       {
-        url: 'https://' + username + ':' + password + '@' + $('#account')[0].value + '.campfirenow.com/users/me.xml',
+        url: 'https://' + $('#account').val() + '.campfirenow.com/users/me.xml',
+        username: $('#username').val(),
+        password: $('#password').val(),
         type: 'GET',
         data: {},
         success: function(data) {
-          $('#message').html(data.find('api-auth-token'));
+          localStorage['token'] = $(data).find('user api-auth-token').text();
+          $('.formRow input').each(
+            function() {
+              localStorage[this.id] = this.value;
+            }
+          );
+          $('#message').html("Authorize succeed!");
         },
         error: function(xhr) {
           $('#message').html(xhr);
-        },
-        always: function() {
-          alert('completed');
+          $('#message').html("Authorize failed.");
         }
       }
     );
@@ -42,8 +48,5 @@ $(document).ready(function() {
       }
     );
     $('#message').html("Saved!");
-    setTimeout(function() {
-      $('#message').html("");
-    }, 2000);
   });
 });
