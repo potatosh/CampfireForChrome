@@ -1,0 +1,1 @@
+$("#room_list").mCustomScrollbar("horizontal",200,"easeOutCirc",1.05,"auto","yes","no",0);
