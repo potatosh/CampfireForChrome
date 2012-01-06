@@ -7,7 +7,6 @@
 		"popup": "main.html"
 	},
 	"permissions": [
-    "http://*.campfirenow.com/",
 	  "https://*.campfirenow.com/"
 	],
 	"options_page": "config.html"
