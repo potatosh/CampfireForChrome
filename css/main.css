@@ -1,0 +1,100 @@
+body {
+  background-color: #eef0f3;
+  min-width: 250px;
+  height: 400px;
+  overflow-x:hidden;
+  margin: 0px;
+}
+
+p {
+  display: inline;
+}
+
+label {
+  position: relative;
+  float: left;
+  vertical-align: middle;
+  font-weight: bold;
+  width: 30%;
+}
+
+input[type=text] {
+  position: relative;
+  width: 68%;
+}
+
+.formRow {
+  padding: 2px;
+  position: relative;
+  left: 5%;
+  width: 90%;
+  border-top: none;
+  border-left: none;
+  border-right: none;
+  border-bottom: solid 1px #bec0c3;
+}
+
+#room_list {
+  margin: 0;
+  width: 250px;
+  height: 100px;
+  padding: 0 10px;
+  border: 0px;
+}
+
+#room_list .customScrollBox {
+  position: relative;
+  height: 100%;
+  overflow: hidden;
+}
+
+#room_list .customScrollBox .container {
+  position: relative;
+  height: 80px;
+  left: 0px;
+  display: inline-block;
+}
+
+#room_list .customScrollBox .content {
+  clear: both;
+}
+
+#room_list .customScrollBox .content p {
+  padding: 0px;
+  margin: 10px 0;
+  color: #09C;
+  font-size: 13px;
+  line-height: 20px;
+}
+
+#room_list .dragger_container {
+  display: block;
+  position: relative;
+  left: 0px;
+  width: 250px;
+  height: 5px;
+  float: left;
+  margin: 10px 0 0;
+  border-top: 5px solid #999;
+  cursor: pointer;
+}
+
+#room_list .dragger {
+  position: absolute;
+  width: 100px;
+  height: 5px;
+  background: #555;
+  margin-top: -5px;
+  text-align: center;
+  overflow: hidden;
+  cursor: pointer;
+}
+
+#room_list .dragger_pressed {
+  position: absolute;
+  width: 100px;
+  height: 5px;
+  background: #09C;
+  overflow: hidden;
+  cursor: w-resize;
+}
