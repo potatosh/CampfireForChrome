@@ -9,6 +9,7 @@
         min-width: 250px;
         height: 400px;
         overflow-x:hidden;
+        margin: 0px;
       }
 
       p {
@@ -66,43 +67,42 @@
       
       #room_list .customScrollBox .content p {
         padding: 0px;
-        margin:10px 0;
-        color:#09C;
-        font-size:13px;
-        line-height:20px;
+        margin: 10px 0;
+        color: #09C;
+        font-size: 13px;
+        line-height: 20px;
       }
       
       #room_list .dragger_container {
         display: block;
-        position:relative;
+        position: relative;
         left: 0px;
-        width:240px;
-        height:0px;
-        float:left;
-        margin:10px 0 0 10px;
-        border-top:1px solid #555;
-        cursor:pointer;
+        width: 250px;
+        height: 5px;
+        float: left;
+        margin: 10px 0 0;
+        border-top: 5px solid #999;
+        cursor: pointer;
       }
       
       #room_list .dragger {
-        position:absolute;
+        position: absolute;
         width: 100px;
-        height:9px;
-        background:#555;
-        margin-top:-5px;
-        text-align:center;
-        overflow:hidden;
-        cursor:pointer;
+        height: 5px;
+        background: #555;
+        margin-top: -5px;
+        text-align: center;
+        overflow: hidden;
+        cursor: pointer;
       }
       
       #room_list .dragger_pressed {
-        position:absolute;
+        position: absolute;
         width: 100px;
-        height:9px;
-        background:#09C;
-        margin-top:-5px;
-        overflow:hidden;
-        cursor:s-resize;
+        height: 5px;
+        background: #09C;
+        overflow: hidden;
+        cursor: w-resize;
       }
     </style>
     <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>

@@ -4,7 +4,7 @@
 	"description": "Campfire client for Google Chrome.",
 	"browser_action": {
 		"default_icon": "icon.png",
-		"popup": "test.html"
+		"popup": "main.html"
 	},
 	"permissions": [
     "http://*.campfirenow.com/",
