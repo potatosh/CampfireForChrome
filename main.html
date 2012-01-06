@@ -4,6 +4,7 @@
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
     <title>Campfire for Chrome</title>
     <link rel="STYLESHEET" href="css/main.css" type="text/css">
+    <link rel="STYLESHEET" href="css/scroll_box.css" type="text/css">
     <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
     <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jqueryui/1.8/jquery-ui.min.js"></script>
     <script type="text/javascript" src="scripts/plugins/jquery.mCustomScrollbar.js"></script>
@@ -13,15 +14,68 @@
   <body>
     <div id="room_list">
       <div class="customScrollBox">
-        <div class="horWrapper" style="width: 500px">
+        <div class="horWrapper">
           <div class="container">
             <div class="content">
-              <h1>The quick brown fox jumps over the lazy dog.</h1>
+              <div id="room_1" class="roomButton">
+                room1
+              </div>
+              <div id="room_2" class="roomButton">
+                room2
+              </div>
+              <div id="room_3" class="roomButton">
+                room3
+              </div>
+              <div id="room_4" class="roomButton">
+                room4
+              </div>
+              <div id="room_5" class="roomButton">
+                room5
+              </div>
+              <div id="room_6" class="roomButton">
+                room6
+              </div>
             </div>
           </div>
           <div class="dragger_container">
             <div class="dragger"></div>
           </div>
+        </div>
+      </div>
+    </div>
+    <div id="message_list">
+      <div class="customScrollBox">
+        <div class="container">
+          <div class="content">
+            <div id="mes_1" class="message">
+              <img src="http://asset0.37img.com/global/ff5bd9783384be46a8abcdd562b77255e88c5237/avatar.gif?r=3">
+              <p class="body">message.</p>
+              <p class="time">2011-12-17 11:20:00</p>
+            </div>
+            <div id="mes_1" class="message">
+              <img src="http://asset0.37img.com/global/ff5bd9783384be46a8abcdd562b77255e88c5237/avatar.gif?r=3">
+              <p class="body">だいぶイケてる気がする</p>
+              <p class="time">2011-12-17 11:20:00</p>
+            </div>
+            <div id="mes_1" class="message">
+              <img src="http://asset0.37img.com/global/ff5bd9783384be46a8abcdd562b77255e88c5237/avatar.gif?r=3">
+              <p class="body">改行するとどうなるのかしら</p>
+              <p class="time">2011-12-17 11:20:00</p>
+            </div>
+            <div id="mes_1" class="message">
+              <img src="http://asset0.37img.com/global/ff5bd9783384be46a8abcdd562b77255e88c5237/avatar.gif?r=3">
+              <p class="body">message.</p>
+              <p class="time">2011-12-17 11:20:00</p>
+            </div>
+            <div id="mes_1" class="message">
+              <img src="http://asset0.37img.com/global/ff5bd9783384be46a8abcdd562b77255e88c5237/avatar.gif?r=3">
+              <p class="body">message.</p>
+              <p class="time">2011-12-17 11:20:00</p>
+            </div>
+          </div>
+        </div>
+        <div class="dragger_container">
+          <div class="dragger"></div>
         </div>
       </div>
     </div>
