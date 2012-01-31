@@ -15,6 +15,12 @@ body {
   background-color: #eee;
   margin: 4px;
   padding: 2px;
+  cursor: pointer;
+}
+
+#notice {
+  text-align: center;
+  font-weight: bold;
 }
 
 .message {
@@ -25,13 +31,21 @@ body {
 
 .message img {
   display: inline-block;
-  margin: 5px;
+  width: 48px;
+  height: 48px;
+  margin: 4px;
   float: left;
 }
 
-.message p.body {
-  display: block;
-  margin: 3px;
+.message div.body {
+  display: inline-block;
+  margin: 4px;
+  width: 175px;
+}
+
+.message p {
+  position: relative;
+  margin: 2px 0px;
 }
 
 .message p.time {

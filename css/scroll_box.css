@@ -2,6 +2,7 @@
   padding: 10px 10px 0px;
   width: 250px;
   height: 50px;
+  cursor: default;
 }
 
 #room_list .customScrollBox {
@@ -35,6 +36,7 @@
 
 #room_list .dragger {
   position: absolute;
+  min-width: 16px;
   height: 8px;
   background: #555;
   margin-top: -8px;
@@ -49,7 +51,7 @@
   height: 8px;
   background: #09C;
   overflow: hidden;
-  cursor: w-resize;
+  cursor: pointer;
 }
 
 #message_list {
@@ -103,5 +105,5 @@
   width: 8px;
   background: #09C;
   overflow: hidden;
-  cursor: w-resize;
+  cursor: pointer;
 }
