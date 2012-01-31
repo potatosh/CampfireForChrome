@@ -11,11 +11,14 @@ $(document).ready(function() {
   
   if(!localStorage['token']) {
     $('#auth').removeAttr('disabled');
+  } else {
+    $('#user_info').html("You're authorized as <img src=\"" + localStorage['avatar'] + "\">" + localStorage['name'] + ".");
   }
   
   //Authenticate function
   $('#auth').click(function() {
     $(this).attr('disabled', 'disabled');
+    var tokenBefore = localStorage['token'];
     $.ajax(
       {
         url: 'https://' + $('#account').val() + '.campfirenow.com/users/me.xml',
@@ -25,16 +28,24 @@ $(document).ready(function() {
         data: {},
         success: function(data) {
           localStorage['token'] = $(data).find('user api-auth-token').text();
+          localStorage['name'] = $(data).find('user name').text();
+          localStorage['avatar'] = $(data).find('user avatar-url').text();
           $('.formRow input').each(
             function() {
               localStorage[this.id] = this.value;
             }
           );
-          $('#message').html("Authorize succeed!");
+          $('#message').fadeOut(300, function() {
+            $(this).html("Authorize succeed!").fadeIn(300);
+          });
+          $('#user_info').fadeOut(300, function() {
+            $(this).html("You're authorized as <img src=\"" + localStorage['avatar'] + "\">" + localStorage['name'] + ".").fadeIn(300);
+          });
         },
         error: function(xhr) {
-          $('#message').html(xhr);
-          $('#message').html("Authorize failed.");
+          $('#message').fadeOut(300, function() {
+            $(this).html("Authorize failed.").fadeIn(300);
+          });
         }
       }
     );
