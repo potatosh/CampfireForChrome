@@ -93,6 +93,7 @@
 #message_list .dragger {
   position: absolute;
   width: 8px;
+  min-height: 16px;
   background: #555;
   margin-left: -8px;
   text-align: center;
